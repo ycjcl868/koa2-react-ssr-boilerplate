@@ -1,0 +1,8 @@
+# file
+.DS_Store
+
+# dir
+node_modules/
+.vscode/
+.idea/
+
