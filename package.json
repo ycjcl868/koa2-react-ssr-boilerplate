@@ -10,7 +10,9 @@
     "precommit": "npm run lint-staged",
     "lint-staged": "lint-staged",
     "lint:styles": "stylelint \"client/**/*.less\" --syntax less",
-    "lint": "eslint --ext .js client/ server/"
+    "lint": "eslint --ext .js client/ server/",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "信鑫-King",
   "license": "MIT",
@@ -81,6 +83,8 @@
     "react-redux": "^5.0.1",
     "react-router": "^3.0.0",
     "redux": "^3.6.0",
-    "redux-thunk": "^2.1.0"
-  }
+    "redux-thunk": "^2.1.0",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
